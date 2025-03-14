@@ -1,0 +1,392 @@
+/* Red-Hat-Display */
+@font-face {
+    font-family: "Red-Hat-Dispaly";
+    src: url("/assets/fonts/RedHatDisplay-VariableFont_wght.ttf") format("truetype");
+}
+/* color */
+:root{
+    --Cyan-600: #4D96A9;
+    --Cyan-300:#8FE3F9;
+    --Purple-600:#855FB1;
+    --Purplr-300:#D9B8FF;
+    --Slate-900:#28283D;
+    --Slate-600:#87879D;
+    --Slate-300:#D1D1DF;
+    --White:#FAFAFA;
+}
+
+html, body {
+    overflow-x: hidden; 
+    /* width: 100%; */
+    background-color: var(--White);
+    z-index: 1;
+
+    margin: 0px;
+  }
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* width: 1440px; */
+}
+
+/* nav */
+.nav{
+    padding: 80px 80px 0px 80px;
+}
+.nav img{
+    width: 118px;
+    height: 28px;
+}
+
+
+/* hero */
+.hero{
+    padding: 64px 80px;
+    /* width: 100%; */
+
+    /* overflow: hidden; */
+}
+.combined{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.combined img{
+    width: 394px;
+    height: 303px;
+    
+    position: relative;
+}
+#hero-left{
+    left: -186px;
+    top: -40px;
+}
+#hero-right{
+    left: 186px;
+    top: 40px;
+}
+
+.text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 32px;
+}
+#slogan{
+    font-family: "Red-Hat-Dispaly";
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 110%;
+    letter-spacing: 0px;
+
+    width: 448.3px;
+    margin: 0px;
+    text-align: center;
+}
+#slogan-hope{
+    font-family: "Red-Hat-Dispaly";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0px;
+
+    margin: 0px;
+    text-align: center;
+    width: 448.3px;
+
+    color: var(--Slate-600);
+}
+
+.simple-button{
+    border-radius: 100px;
+    padding: 16px 40px;
+
+    font-family: "Red-Hat-Dispaly";
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 150%;
+    letter-spacing: 0px;
+
+    border: none;
+    cursor: pointer;
+}
+#D1{
+    background-color: var(--Cyan-600);
+    color: var(--White);
+}
+#D1:hover{
+    background-color: #71C0D4;
+}
+#D1 span{color: var(--Cyan-300);}
+#W1{
+    background-color: var(--Purple-600);
+    color: var(--White);
+}
+#W1:hover{
+    background-color: #B18BDD;
+}
+
+
+/* main-content */
+.main-content{
+    padding: 56px 80px 72px 80px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 64px;
+}
+
+
+.index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    z-index: 1;
+}
+.line{
+    width: 1px;
+    height: 80px;
+    background-color: var(--Slate-300);
+    border: none;
+}
+.circle{
+    width: 56px;
+    height: 56px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100px;
+    border: 1px solid var(--Slate-300);
+    background-color: var(--White);
+}
+.index-num{
+    font-family: "Red-Hat-Dispaly";
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+#bitmap-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+}
+.bitmap{
+    width: 256px;
+    height: 256px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#title-1{
+    font-family: "Red-Hat-Dispaly";
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 110%;
+    letter-spacing: 4px;
+
+    margin: 0px;
+
+    color: var(--Cyan-600);
+}
+#title-2{
+    font-family: "Red-Hat-Dispaly";
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 110%;
+    letter-spacing: 0px;
+
+    margin: 0px;
+    width: 445px;
+    text-align: center;
+}
+#text-1{
+    font-family: "Red-Hat-Dispaly";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0px;
+
+    margin: 0px;
+    width: 544px;
+    text-align: center;
+
+    color: var(--Slate-600);
+}
+
+
+/* footer-cta */
+.footer-cta{
+    width: 100%;
+
+    display: flex; 
+    flex-direction: column;
+
+    
+}
+
+.footer-hero{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 112px 80px;
+    gap: 32px;
+    margin-top: -28px;
+
+    background-image: url("/assets/Frontend-Mentor/meet-landing-page/desktop/image-footer.jpg");
+    background-size: cover; 
+    background-position: top;  
+    background-repeat: no-repeat; 
+    background-color: rgba(0, 0, 0, 0.74); /* 半透明的黑色遮罩 */
+    background-blend-mode: overlay; /* 让背景图和颜色混合 */
+}
+
+#footer-slogan{
+    font-family: "Red-Hat-Dispaly";
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 110%;
+    letter-spacing: 0px;
+
+    margin: 0px;
+
+    color: var(--White);
+}
+
+#footer-text{
+    font-family: "Red-Hat-Dispaly";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0px;
+
+    width: 355px;
+    margin: 0px;
+
+    color: var(--White);
+}
+
+#D2{
+    color: var(--White);
+    background-color: var(--Purple-600);
+}
+#D2 span{
+    color: var(--Purplr-300);
+}
+#D2:hover{
+    background-color: #B18BDD;
+}
+
+/* Table端 */
+@media (max-width : 1310px){
+    /* hero */
+    .combined{
+        flex-direction: column;
+    }
+    #hero-left{
+        left: 0px;
+        top: 0px;
+        width: 820px;
+        height: 303px;
+
+        margin-bottom: 64px;
+    }
+    #hero-right{
+        display: none;
+    }
+
+    #slogan{
+        width: 350.3px;
+        font-size: 48px;
+    }
+
+    /* main-content */
+    .bitmap{
+        object-fit: cover;
+        width: 152px;
+        height: 160px;
+    }
+    #title-1{
+        margin-bottom: 24px;
+    }
+    #title-2{
+        font-size: 36px;
+    }
+    #text-1{
+        font-size: 17px;
+    }
+
+    /* footer-cta */
+    .footer-hero{
+        flex-direction: column;
+        background-image: url("/assets/Frontend-Mentor/meet-landing-page/tablet/image-footer.jpg");
+    }
+    #footer-text{
+        width: 580px;
+        text-align: center;
+    }
+}
+
+/* mobile端 */
+@media (max-width:700px){
+    #hero-left{
+        width: 433px;
+        height: 160px;
+    }
+    #slogan{
+        font-size: 52px;
+    }
+    #slogan-hope{
+        width: 340px;
+    }
+    .text-content div{
+        flex-direction: column;
+    }
+    #bitmap-content{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #title-1{
+        margin-bottom: 16px;
+    }
+    #title-2{
+        font-size: 32px;
+        width: 320px;
+    }
+    #text-1{
+        width: 320px;
+    }
+    #footer-slogan{
+        text-align: center;
+    }
+    #footer-text{
+        width: 340px;
+    }
+    .footer-hero{
+        background-image: url("/assets/Frontend-Mentor/meet-landing-page/mobile/image-footer.jpg");
+    }
+}
